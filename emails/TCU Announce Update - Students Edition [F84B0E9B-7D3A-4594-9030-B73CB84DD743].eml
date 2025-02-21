@@ -1,0 +1,356 @@
+Received: from SA1PR16MB6109.namprd16.prod.outlook.com (2603:10b6:806:3b4::12)
+ by MN2PR16MB3597.namprd16.prod.outlook.com with HTTPS; Mon, 1 Jan 2024
+ 07:03:09 +0000
+Received: from SJ0PR03CA0128.namprd03.prod.outlook.com (2603:10b6:a03:33c::13)
+ by SA1PR16MB6109.namprd16.prod.outlook.com (2603:10b6:806:3b4::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7135.24; Mon, 1 Jan
+ 2024 07:03:07 +0000
+Received: from DM6NAM12FT065.eop-nam12.prod.protection.outlook.com
+ (2603:10b6:a03:33c::4) by SJ0PR03CA0128.outlook.office365.com
+ (2603:10b6:a03:33c::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7135.20 via Frontend
+ Transport; Mon, 1 Jan 2024 07:03:07 +0000
+Authentication-Results: spf=softfail (sender IP is 138.237.49.213)
+ smtp.mailfrom=tcu.edu; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=tcu.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ tcu.edu discourages use of 138.237.49.213 as permitted sender)
+Received: from mail.tcu.edu (138.237.49.213) by
+ DM6NAM12FT065.mail.protection.outlook.com (10.13.179.97) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7113.7 via Frontend Transport; Mon, 1 Jan 2024 07:03:06 +0000
+Received: from EXSWRN01.tcu.edu (138.237.49.161) by EXPNDN03.tcu.edu
+ (138.237.49.213) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.1118.40; Mon, 1 Jan
+ 2024 00:15:14 -0600
+Received: from WEBFARMB02 (138.237.48.248) by xsmtp.tcu.edu (138.237.49.161)
+ with Microsoft SMTP Server id 15.2.1118.37 via Frontend Transport; Mon, 1 Jan
+ 2024 00:15:14 -0600
+From: TCU Announce Notification <tcuannounce@tcu.edu>
+To: <AllStudentsFull@tcu.edu>
+Date: Mon, 1 Jan 2024 00:15:14 -0600
+Subject: TCU Announce Update - Students Edition
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <5d47a59d-33e7-4810-be9a-ec324d17cfc0@EXSWRN01.tcu.edu>
+Return-Path: tcuannounce@tcu.edu
+X-TCU-ST: 2
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-OrganizationHeadersPreserved: EXPNDN03.tcu.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 01 Jan 2024 07:03:06.6695
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 7257848c-0098-480f-1bb4-08dc0a97b4a3
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthSource: EXSWRN01.tcu.edu
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-CrossPremisesHeadersPromoted: DM6NAM12FT065.eop-nam12.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered: DM6NAM12FT065.eop-nam12.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DM6NAM12FT065:EE_|SA1PR16MB6109:EE_|MN2PR16MB3597:EE_
+X-OriginatorOrg: tcu.edu
+X-MS-Office365-Filtering-Correlation-Id: 7257848c-0098-480f-1bb4-08dc0a97b4a3
+X-LD-Processed: 6e2d7d24-bbe9-43f7-a31f-fd753eb4d4aa,ExtFwd
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report: CIP:138.237.49.213;CTRY:US;LANG:en;SCL:1;SRV:;IPV:CAL;SFV:NSPM;H:mail.tcu.edu;PTR:EXPNDN03.TCU.EDU;CAT:NONE;SFS:;DIR:INT;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Jan 2024 07:03:06.3258
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7257848c-0098-480f-1bb4-08dc0a97b4a3
+X-MS-Exchange-CrossTenant-Id: 6e2d7d24-bbe9-43f7-a31f-fd753eb4d4aa
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=6e2d7d24-bbe9-43f7-a31f-fd753eb4d4aa;Ip=[138.237.49.213];Helo=[mail.tcu.edu]
+X-MS-Exchange-CrossTenant-AuthSource: EXSWRN01.tcu.edu
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR16MB6109
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.5423911
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7135.011
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	m+dDVCg49dHXAuCXthGjWVBtTOnIuhDxQa33Oha2w1Fprgzwmq5lc6ZP1owNS9iyu08voIkZiJEdm5X3DItRH10ZSB3E0bRW39ffShpdIbtl9djUsxN7Bc+V0ezo/AaEPXtEJnIcCpPuXiEBs58ER98zlP5GT3HQyZJP/PZCjH9UVsxbX5f0u7XUdG9dlnKIUURx4/5wgbjVUoFgNvZGPS1h8+RKkQbM/zDV/54x8XpjrfTVslvSY901wPvUu3tWzby53hHejzLbwST8J8Ov7RMTkaT3PMCsv8QR1UAvPkJh3XiMfgDUZm76RJ9eoRD7k2WVqaTngfr/42L1v1GFWezEnbaBxc2TyzpLdGvLkLzkPZB4SbS7aFDm8B5VNUIc2JZ+BGSRYRDKjQj3K2b+sEo181ytytzFaA9PPYPaj07iLqg4WQyPNeAN5Urt4z0cHT/V8F/H34KIYW9bgzfIElakUGRZS88u/qD+2rAYs6Vd3qS7RZM8CMRwa32NuHKAj2IPw3qpXeXhGX7c82DQEbJyqEqLPJV3hagVWfltypzKcppaVaMl9n51OlKC/dB1vI6O+twp+gNuxfUCLzbic5fPjIg28hAKGiPconRmPmF+10iYuazfGgHnOk27zikDyskWLXlh6tWZnDryQpQbPiQgxAKnGYglVva8LB+3cXZagpN7Mbv5Nj3qFlQj6rwSig1z5vER7w4ByOkKXMvrigPtHaozPnYzpau5NG59dmVIC/hu82zEvYqJHmNb+se3mM/XHjB+CUGKfS325eMNBA==
+MIME-Version: 1.0
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+    </head>
+    <body>
+        <table width=3D"850" border=3D"0">
+            <tr>
+                <table width=3D"850" border=3D"0">
+                    <td>
+                        <font size=3D"2">
+                           <a href=3D"https://tcuannounce.tcu.edu/?location=
+ID=3D12">University Announcements</a>
+                        </font>&nbsp;&nbsp;
+                        <font size=3D"2">
+                           <a href=3D"https://tcuannounce.tcu.edu/?location=
+ID=3D10">Marketplace</a>
+                        </font>&nbsp;&nbsp;
+                        <font size=3D"2">
+                           <a href=3D"https://tcuannounce.tcu.edu/?location=
+ID=3D8">Rental/Roommates</a>
+                        </font>&nbsp;&nbsp;
+                    </td>
+                </table>
+            </tr>
+        </table>
+        <br><br>
+        <table width=3D"850" border=3D"0">
+            <tr>
+                <td>
+                    <h2>
+                        <b><a id=3D"12">University Announcements</a></b>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Eating Up Route 66 -- Submitted by:=20
+                        <a href=3D"mailto:codee.scott@tcu.edu">
+                            codee.scott@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>January 6 - 10:30am Center for Texas Studies at TCU =
+&amp; Fort Worth Public Library Presentation</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+30209">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Road Frogs Field Trip: FW Stock Show &amp; Rodeo --=
+ Submitted by:=20
+                        <a href=3D"mailto:j.j.rentz@tcu.edu">
+                            j.j.rentz@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Join Road Frogs as we take a trip to the rodeo!</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+30229">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/?locationID=3D12=
+">View All</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        <b><a id=3D"10">Marketplace</a></b>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Textbooks -- Submitted by:=20
+                        <a href=3D"mailto:t.k.chronert@tcu.edu">
+                            t.k.chronert@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Used Textbooks from Fall 2023</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+30220">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Keurig and K-Cups -- Submitted by:=20
+                        <a href=3D"mailto:m.u.mccormack@tcu.edu">
+                            m.u.mccormack@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Keurig and 80 K-Cups</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+30221">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Ventura Acoustic Guitar V115BRN -- Submitted by:=20
+                        <a href=3D"mailto:m.lack@tcu.edu">
+                            m.lack@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Barely used guitar, case, strap, and accessories</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+30231">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Brand New Magic Keyboard Folio for iPad 10Gen $200 =
+-- Submitted by:=20
+                        <a href=3D"mailto:alex.j.jaime@tcu.edu">
+                            alex.j.jaime@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>I bought the wrong keyboard for my iPad and am looki=
+ng to sell it asap. It has never ever been used and still has everything in=
+side. Happy to trade.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+30232">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/?locationID=3D10=
+">View All</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        <b><a id=3D"8">Rental/Roommates</a></b>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        AVAILABLE May 2025 - 4 Bedroom House -- Submitted b=
+y:=20
+                        <a href=3D"mailto:klgreen@tcu.edu">
+                            klgreen@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Closest and Nicest House to Campus!</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+27525">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Sublease Spring 2024 -- Submitted by:=20
+                        <a href=3D"mailto:savanna.brick@tcu.edu">
+                            savanna.brick@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Looking for a sublease for my room with own bathroom=
+ and 1 mile from TCU.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+30228">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/?locationID=3D8"=
+>View All</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </body>
+</html>
+

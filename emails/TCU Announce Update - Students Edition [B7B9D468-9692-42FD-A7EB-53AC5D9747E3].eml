@@ -1,0 +1,814 @@
+Received: from SJ2PR16MB5143.namprd16.prod.outlook.com (2603:10b6:a03:4ff::11)
+ by DM6PR16MB3596.namprd16.prod.outlook.com with HTTPS; Mon, 2 Dec 2024
+ 06:16:39 +0000
+Received: from BLAPR03CA0125.namprd03.prod.outlook.com (2603:10b6:208:32e::10)
+ by SJ2PR16MB5143.namprd16.prod.outlook.com (2603:10b6:a03:4ff::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8207.17; Mon, 2 Dec
+ 2024 06:16:36 +0000
+Received: from BN2PEPF000044A0.namprd02.prod.outlook.com
+ (2603:10b6:208:32e:cafe::e4) by BLAPR03CA0125.outlook.office365.com
+ (2603:10b6:208:32e::10) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8207.16 via Frontend Transport; Mon,
+ 2 Dec 2024 06:16:35 +0000
+Authentication-Results: spf=pass (sender IP is 138.237.49.164)
+ smtp.mailfrom=tcu.edu; dkim=none (message not signed)
+ header.d=none;dmarc=pass action=none header.from=tcu.edu;
+Received-SPF: Pass (protection.outlook.com: domain of tcu.edu designates
+ 138.237.49.164 as permitted sender) receiver=protection.outlook.com;
+ client-ip=138.237.49.164; helo=mail.tcu.edu; pr=C
+Received: from mail.tcu.edu (138.237.49.164) by
+ BN2PEPF000044A0.mail.protection.outlook.com (10.167.243.151) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8230.7 via Frontend Transport; Mon, 2 Dec 2024 06:16:34 +0000
+Received: from EXPNDN01.tcu.edu (138.237.49.211) by EXSWRN04.tcu.edu
+ (138.237.49.164) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.1544.9; Mon, 2 Dec 2024
+ 00:15:18 -0600
+Received: from WEBFARMB01 (138.237.48.245) by xsmtp.tcu.edu (138.237.49.211)
+ with Microsoft SMTP Server id 15.2.1544.9 via Frontend Transport; Mon, 2 Dec
+ 2024 00:15:18 -0600
+From: TCU Announce Notification <tcuannounce@tcu.edu>
+To: <AllStudentsFull@tcu.edu>
+Date: Mon, 2 Dec 2024 00:15:18 -0600
+Subject: TCU Announce Update - Students Edition
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <3a5219de-f952-452a-b139-69bcd681bc67@EXPNDN01.tcu.edu>
+Return-Path: tcuannounce@tcu.edu
+X-TCU-ST: 2
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-OrganizationHeadersPreserved: EXSWRN04.tcu.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Dec 2024 06:16:35.5276
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 3023c48a-4f96-42d9-a558-08dd1298dfc8
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthSource: EXPNDN01.tcu.edu
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-CrossPremisesHeadersPromoted: BN2PEPF000044A0.namprd02.prod.outlook.com
+X-CrossPremisesHeadersFiltered: BN2PEPF000044A0.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN2PEPF000044A0:EE_|SJ2PR16MB5143:EE_|DM6PR16MB3596:EE_
+X-OriginatorOrg: tcu.edu
+X-MS-Office365-Filtering-Correlation-Id: 3023c48a-4f96-42d9-a558-08dd1298dfc8
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|82310400026|366016|8096899003|41050700001;
+X-Forefront-Antispam-Report: CIP:138.237.49.164;CTRY:US;LANG:en;SCL:1;SRV:;IPV:CAL;SFV:NSPM;H:mail.tcu.edu;PTR:exswrn04.tcu.edu;CAT:NONE;SFS:(13230040)(82310400026)(366016)(8096899003)(41050700001);DIR:INT;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Dec 2024 06:16:34.0432
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3023c48a-4f96-42d9-a558-08dd1298dfc8
+X-MS-Exchange-CrossTenant-Id: 6e2d7d24-bbe9-43f7-a31f-fd753eb4d4aa
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=6e2d7d24-bbe9-43f7-a31f-fd753eb4d4aa;Ip=[138.237.49.164];Helo=[mail.tcu.edu]
+X-MS-Exchange-CrossTenant-AuthSource: EXPNDN01.tcu.edu
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ2PR16MB5143
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.3064945
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8207.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	HRD25bpUQywRqywk5NBprTi0PmSybfu7MwwUn6Qb0YtWWuYwJDftFB6/YlnCcDHqBOn6y2ASQ3GmmZQTYSdeMLoGDyp/gcdp2LZQXpn248SvJ3M80tR6njnvomYHEF8SIx0P2ndn9xI07ebpHpJZh4gAPsJJ1WCaybOMYoiJQeigHVskVpXBUrNwy90vIXcS9UNRjuJ1edBAnIh70e1ZAjAgMBAMDFLXehg4Bf7f1XWrBXWawDiDUj/9Z2HhhmACxseuqIpLLaGFwEHEla1/uE+XnFaZbQtjChKnrsEOMwhpLcKznmYNeYvWyWkwNS6sX2JBs8SzssMZMBO2AUTeDMl2N8zpRm8c3L7zZplg+x+HAMoLTaBOuEn/NgRD1sgrwUteXSnCKryBfmlyHHAieOO6A6pr4PF5mXLqd+Dhzg1IAdHnEgzyEUCtq1w5lSLJsKcH4HWYh0z4ifZHPn9d9ttG3+oHi9ZSNVjKh3n1jol4W4NZkzpCzWdfHq0YOLm9jb+VlpCVAaAophHLIH/i1sqc0+ccd2CT+7CNon2bdVtvCEs7HGlk2ye2fvPew8DmOfTuTFx+sj/rN1/Ss1W1Ru6RQ2lI671zlPGyteUfkUKwDGz+9L+wCs/00IqmEFHs5CiPMmEPQZ0AMENOkU6N4v9z9HVEIkCY+gfdyKowFU5eR9dP0fwJycV+ABW40eVXiHU8bVBg1U9VxEuNyNno4BMymggH3OyqOpKnG2UPL0IMx+4G1jf/UwB3dCVvx4wIVlEaloQHaBzRGVKSuI9acePyaBq+75rOT8TxtDrKDFOUSJI8G0BwTCoHoySFbzx25eMYCfyDWK1EvpMPg8AXE1+8BYWyyl091vwmBzcloNnfqetoWoXeCiGhx7xw4NjY
+MIME-Version: 1.0
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+    </head>
+    <body>
+        <table width=3D"850" border=3D"0">
+            <tr>
+                <table width=3D"850" border=3D"0">
+                    <td>
+                        <font size=3D"2">
+                           <a href=3D"https://tcuannounce.tcu.edu/?location=
+ID=3D12">University Announcements</a>
+                        </font>&nbsp;&nbsp;
+                        <font size=3D"2">
+                           <a href=3D"https://tcuannounce.tcu.edu/?location=
+ID=3D13">Department Announcements</a>
+                        </font>&nbsp;&nbsp;
+                        <font size=3D"2">
+                           <a href=3D"https://tcuannounce.tcu.edu/?location=
+ID=3D10">Marketplace</a>
+                        </font>&nbsp;&nbsp;
+                        <font size=3D"2">
+                           <a href=3D"https://tcuannounce.tcu.edu/?location=
+ID=3D8">Rental/Roommates</a>
+                        </font>&nbsp;&nbsp;
+                    </td>
+                </table>
+            </tr>
+        </table>
+        <br><br>
+        <table width=3D"850" border=3D"0">
+            <tr>
+                <td>
+                    <h2>
+                        <b><a id=3D"12">University Announcements</a></b>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Spanish &amp; Hispanic Studies Study Day -- Submitt=
+ed by:=20
+                        <a href=3D"mailto:k.a.maciel@tcu.edu">
+                            k.a.maciel@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Come study for finals with the Spanish Department</p=
+>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32475">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Hometown Hero: Major Horace S. Carswell, Jr. -- Sub=
+mitted by:=20
+                        <a href=3D"mailto:charles.cox@tcu.edu">
+                            charles.cox@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Come Learn about the Life of Major Horace S. Carswel=
+l Jr!</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32480">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/?locationID=3D12=
+">View All</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        <b><a id=3D"13">Department Announcements</a></b>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Caprock Canyons Trip -- Submitted by:=20
+                        <a href=3D"mailto:s.a.georgecink@tcu.edu">
+                            s.a.georgecink@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Camping at Caprock Canyons State Park </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32331">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/?locationID=3D13=
+">View All</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        <b><a id=3D"10">Marketplace</a></b>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Lovers + Friends dress -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Asking $25 - Size XS </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+27824">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $15 Go Frogs  -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>tshirt size: Large</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32298">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $12 each - New! -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>3 T-shirts: see sizing below</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32299">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $12 each - New ! -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>tank sizes: see below</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32300">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $12 each - New! -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>tshirt sizes: see below</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32301">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $20 TCU purple jeans  -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Brand new condition</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32302">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $20 Enthro brand lounge pants -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Brand New - Size Small</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32322">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $20 Tyler Boe  -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Size 2 lobster shorts</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32340">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Baublebar earrings  -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>$10 NEW condition</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32359">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        $10 Victoria Emerson bracelets -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>$10 for the set of 5! Brand new condition</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32360">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Buddy Love -- Submitted by:=20
+                        <a href=3D"mailto:angela.kenny@tcu.edu">
+                            angela.kenny@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>$20 Size: Extra Small</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32363">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Air Jordan 1 High US Mens 8.5 -- Submitted by:=20
+                        <a href=3D"mailto:emilio.cortes@tcu.edu">
+                            emilio.cortes@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Great Condition</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32439">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Galanz mini fridge -- Submitted by:=20
+                        <a href=3D"mailto:simone.bazan@tcu.edu">
+                            simone.bazan@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Galanz 3.3 Cu Ft Single-Door Mini Refrigerator, Blac=
+k, Energy Star Certified</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32476">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Westinghouse 24&quot; 720p LED Roku Smart TV -- Sub=
+mitted by:=20
+                        <a href=3D"mailto:simone.bazan@tcu.edu">
+                            simone.bazan@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Compact TV: stylish, versatile, ideal for any room!<=
+/p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32477">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Christmas trees -- Submitted by:=20
+                        <a href=3D"mailto:t.l.meyers@tcu.edu">
+                            t.l.meyers@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>two and three tier trees</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32481">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/?locationID=3D10=
+">View All</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        <b><a id=3D"8">Rental/Roommates</a></b>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Looking for Spring Roommate -- Submitted by:=20
+                        <a href=3D"mailto:henry.bilsland@tcu.edu">
+                            henry.bilsland@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>3 Bedroom Condo in Village East looking for roommate=
+</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32460">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Spring Semester Freshman Roommate Needed -- Submitt=
+ed by:=20
+                        <a href=3D"mailto:whitney.l.kay@tcu.edu">
+                            whitney.l.kay@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Foster Hall Female</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32463">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        3 Bed/2 Bath House for Rent 2 Blocks from TCU! -- S=
+ubmitted by:=20
+                        <a href=3D"mailto:a.bailey@tcu.edu">
+                            a.bailey@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Updated, Convenient and Comfortable! </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32466">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        2 Bedrooms Available for Rent! -- Submitted by:=20
+                        <a href=3D"mailto:h.muckerman@tcu.edu">
+                            h.muckerman@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Looking for female roommates in off campus house</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32470">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Sublease Spring Semester 2025 -- Submitted by:=20
+                        <a href=3D"mailto:n.k.white@tcu.edu">
+                            n.k.white@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Looking for a male sublease in 3bed/3bath apartment.=
+</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32472">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Sublease Apartment  for Spring -- Submitted by:=20
+                        <a href=3D"mailto:emma.polanco@tcu.edu">
+                            emma.polanco@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Looking for someone to sublease apartment</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32473">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Looking for 2 Roommates for 25-26' Academic Year --=
+ Submitted by:=20
+                        <a href=3D"mailto:robin.singh@tcu.edu">
+                            robin.singh@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>4 Bed/3 Bath House Close to Campus </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32474">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        Spring 2025 Sublease -- Submitted by:=20
+                        <a href=3D"mailto:mallory.rutz@tcu.edu">
+                            mallory.rutz@tcu.edu
+                        </a>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Spring 2025 Sublease Available for TCU Female (Junio=
+r/Senior)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/Listing/Details/=
+32482">More Information...</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=3D"https://tcuannounce.tcu.edu/?locationID=3D8"=
+>View All</a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
