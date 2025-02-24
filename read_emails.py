@@ -6,17 +6,11 @@ from email.utils import parsedate_to_datetime
 
 
 def get_email_body(msg): # extract the body of the email
-    if msg.is_multipart():
-        print("hi")
-        for part in msg.walk():
-            if part.get_content_type() == "text/plain":  # only get plain text emails
-                body = part.get_payload(decode=True).decode()
-    else:
-        print("lo")
-        body = msg.get_payload(decode=True).decode()
+    body = msg.get_payload(decode=True).decode()
 
     soup = BeautifulSoup(body, "html.parser")
     clean_text = soup.get_text(separator="\n", strip=True)
+    
     return(clean_text)
 
 
