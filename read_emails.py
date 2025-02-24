@@ -1,35 +1,42 @@
-import os
 import email
 from email import policy
+import chardet
+from bs4 import BeautifulSoup
+from email.utils import parsedate_to_datetime
 
-email_dir = "emails"
-x = True # temporary variable for the while loop
 
 def get_email_body(msg): # extract the body of the email
     if msg.is_multipart():
+        print("hi")
         for part in msg.walk():
             if part.get_content_type() == "text/plain":  # only get plain text emails
-                return part.get_payload(decode=True).decode()
-            
+                body = part.get_payload(decode=True).decode()
     else:
-        return msg.get_payload(decode=True).decode()
+        print("lo")
+        body = msg.get_payload(decode=True).decode()
 
-# for each file in the email directory, get the filepath and message
-for file in os.listdir(email_dir): 
-    filepath = os.path.join(email_dir, file)
-    print(filepath)
+    soup = BeautifulSoup(body, "html.parser")
+    clean_text = soup.get_text(separator="\n", strip=True)
+    return(clean_text)
 
-    with open(filepath, "r", encoding="utf-8") as eml_file:
-        msg = email.message_from_file(eml_file, policy=policy.default)
 
-    while (x): # print details of one email for testing purposes
-        subject = msg["Subject"]
-        sender = msg["From"]
-        date = msg["Date"]
-        body = get_email_body(msg)
+def get_email_date(msg):
+    date_header = msg["Date"]
+    if date_header:
+        date = parsedate_to_datetime(date_header)  # Converts to datetime
+        converted_date = f"{date.month}/{date.day}/{date.year}"
+        return converted_date
+    return None
 
-        print(f"Subject: {subject}")
-        print(f"From: {sender}")
-        print(f"Date: {date}")
-        print(f"Body: {body}")
-        x = False
+
+def load_email(filepath):
+
+    with open(filepath, 'rb') as eml_file:  # Open in binary mode
+        raw_data = eml_file.read()
+        result = chardet.detect(raw_data)
+        encoding = result['encoding'] if result['encoding'] else 'utf-8'
+
+    email_data = raw_data.decode(encoding, errors='ignore')
+    msg = email.message_from_string(email_data, policy=policy.default)
+
+    return get_email_body(msg), get_email_date(msg)
